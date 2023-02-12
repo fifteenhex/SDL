@@ -287,12 +287,12 @@ DirectFB_GetDisplayModes(_THIS, SDL_VideoDisplay * display)
     for (i = 0; i < data.nummodes; ++i) {
         mode = data.modelist[i];
 
-        mode.format = SDL_PIXELFORMAT_ARGB8888;
-        CheckSetDisplayMode(_this, display, dispdata, &mode);
-        mode.format = SDL_PIXELFORMAT_RGB888;
-        CheckSetDisplayMode(_this, display, dispdata, &mode);
-        mode.format = SDL_PIXELFORMAT_RGB24;
-        CheckSetDisplayMode(_this, display, dispdata, &mode);
+//        mode.format = SDL_PIXELFORMAT_ARGB8888;
+//        CheckSetDisplayMode(_this, display, dispdata, &mode);
+//        mode.format = SDL_PIXELFORMAT_RGB888;
+//        CheckSetDisplayMode(_this, display, dispdata, &mode);
+//        mode.format = SDL_PIXELFORMAT_RGB24;
+//        CheckSetDisplayMode(_this, display, dispdata, &mode);
         mode.format = SDL_PIXELFORMAT_RGB565;
         CheckSetDisplayMode(_this, display, dispdata, &mode);
         mode.format = SDL_PIXELFORMAT_INDEX8;
